@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beden Kitle Indeksi Hesapla</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Beden Kitle İndeksi Hesapla</h1>
+
+      <form id="bmiForm">
+        <label for="kilo">Kilo (kg):</label>
+        <input type="number" id="kilo" name="kilo" required step="0.1" /><br />
+
+        <label for="boy">Boy (metre):</label>
+        <input type="number" id="boy" name="boy" required step="0.01" /><br />
+
+        <button type="submit">BMI Hesapla</button>
+      </form>
+
+      <p id="sonuc"></p>
+      <div class="bilgilendirme">
+        <h2>BMI Kategorileri</h2>
+        <ul>
+          <li><strong>18.5 altında:</strong> İdeal kilonun altında</li>
+          <li><strong>18.5 - 24.9:</strong> İdeal kilo</li>
+          <li>
+            <strong>25 - 29.9:</strong> İdeal kilonun üstünde (Fazla Kilolu)
+          </li>
+          <li><strong>30 - 39.9:</strong> İdeal kilonun çok üstünde (Obez)</li>
+          <li>
+            <strong>40 ve üzeri:</strong> İdeal kilonun çok üstünde (Morbid
+            Obez)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
